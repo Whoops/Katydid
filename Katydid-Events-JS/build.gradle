@@ -5,6 +5,7 @@ version '1.0-SNAPSHOT'
 buildDir = "$buildRoot/Katydid-Events-JS"
 
 compileKotlin2Js {
+    kotlinOptions.moduleKind = "commonjs"
     kotlinOptions.sourceMap = true
     kotlinOptions.sourceMapEmbedSources = 'always'
 }
